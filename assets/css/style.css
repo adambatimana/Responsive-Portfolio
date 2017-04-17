@@ -19,7 +19,7 @@
     #container{
     	width: 100%;
     	margin: 0 auto;
-        
+
     }
     body{
     	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -27,6 +27,7 @@
     	color: #777777;
     	margin: 0 auto;
         position: relative;
+        max-width: 1024px;
 
     }
     #backgroundspace{
@@ -65,16 +66,20 @@
     	padding: 1em;
     	height: 60px;
     	border-bottom: solid 2px gray;
-    	
+width:100%;
     }
-
+header{
+  display: block;
+float: left;
+width: 50%;
+}
   header p a {
     font-family: 'Georgia', Times, Times New Roman, serif;
 	float: left;
 	height: 60px;
 	padding: 0 16px ;
 	color: #FFF;
-	text-decoration: none;  
+	text-decoration: none;
 	font-size: 1.5em;
 	font-weight: normal;
 	line-height: 2.25em;
@@ -85,11 +90,11 @@
     nav li{
     	list-style: none;
     	display: inline-block;
-        
+
     }
     nav ul li a {
     	padding:1.25em 1em;
-        
+
 
     }
     nav ul li a:link{
@@ -190,7 +195,7 @@ input[type=submit]{
     	/*	width: 270px;*/
     }
     aside{
-    	width:35%; 
+    	width:35%;
     	margin-top: 2em;
     	float: left;
     }
@@ -230,7 +235,7 @@ input[type=submit]{
         padding:1em 4em;
         color: #FFF;
     }
- 
+
 
 .sticky {
   position: fixed;
@@ -239,17 +244,179 @@ input[type=submit]{
 }
 
 
-@media screen and (max-width: 980px) {
-   
+@media screen and (min-width:769px) and (max-width: 980px) {
+  #container{
+    width: 90%;
+  }
+header{
+  width: 50%;
+  float:left;
+}
+  nav ul{
+    text-align: right;
+    float: right;
+    width: 50%;
+      position: relative;
+      right: 5em;
+      padding-top: .25em;
+
+  }
+  section{
+    width: 100%;
+  }
+  main, aside{
+    padding: 1em;
+    margin-top: 1em;
+
+  }
+  main{
+    width:60%;
+    margin-left: 1em;
+}
+main img{
+  width: 100%;
+  margin-bottom: 1em;
+}
+main p{
+  line-height: 1.5em;
+}
+  aside{
+
+  }
 }
 
+@media screen and (min-width:641px) and (max-width:768px){
 
-@media screen and (max-width: 768px) {
-   
+    nav{
+      background: white;
+      padding: 1em;
+      height: 60px;
+      border-bottom: solid 2px gray;
+
+    }
+header{
+  display: block;
+  float: left;
+  width: 50%;
 }
-@media screen and (max-width: 640px) {
-   
+
+  header p a{
+
+    position: relative;
+    left:1em;
+  }
+  nav ul{
+    right: 0;
+  }
+    main{
+      width: 100%;
+      padding: 0 1em;
+      margin: 1em 0 auto;
+    }
+    main{
+      width: 100%;
+      padding: 0 1em;
+      margin: 2em 0 auto;
+    }
+    main section img{
+      float: left;
+      width: 50%;
+      margin-bottom: 1em;
+
+    }
+    main p{
+      line-height: 1.75em;
+    }
+
+    section{
+      width: 100%;
+      padding: 1em;
+    }
+    aside{
+      padding: 0 1em;
+      width: 100%;
+      margin-bottom: 6em;
+    }
+    aside h2{
+      text-align: left;
+      font-size: 1.5em;
+    }
+    .social{
+      text-align: left;
+    }*/
+
 }
+
+@media screen and (min-width:440px) and (max-width: 640px) {
+
+header{
+  width: 100%;
+  display: block;
+  float: left;
+
+}
+    header p a{
+     width: 100%;
+     display: block;
+     position: static;
+     text-align: center;
+     font-size: 2em;
+     padding-bottom: 2.5em;
+   }
+   nav{
+     width: 100%;
+clear: both;
+   }
+   nav ul{
+     width: 100%;
+     text-align: center;
+     float: none;
+     position: static;
+
+   }
+   nav li{
+     display: block;
+     float: left;
+     text-align: center;
+     width: 33.3%;
+
+}
+   nav ul li a{
+     padding:0 3em 0 3em;
+   }
+   main{
+     width: 100%;
+     padding: 0 1em;
+     margin: 1em 0 auto;
+   }
+   main section img{
+     float: none;
+     width: 100%;
+margin-bottom: 1em;
+   }
+   main p{
+     line-height: 1.75em;
+   }
+
+   section{
+     width: 100%;
+     padding: 1em;
+   }
+   aside{
+     padding: 0 1em;
+     width: 100%;
+     margin-bottom: 6em;
+   }
+   aside h2{
+     text-align: left;
+     font-size: 1.5em;
+   }
+   .social{
+     text-align: left;
+   }
+
+}
+
 
     .cf{
     	overflow: auto;
