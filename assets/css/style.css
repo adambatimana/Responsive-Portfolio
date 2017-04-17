@@ -176,6 +176,8 @@ input{
     display: block;
     width: 70%;
     padding: 1em;
+    border: solid 1px lightgray;
+    background: #eee;
 }
 label+textarea{
     display: block;
@@ -291,6 +293,12 @@ figcaption{
   width: 100%;
   text-align: center;
   bottom: 2em;
+}
+input{
+  width: 100%;
+}
+textarea{
+  width: 100%;
 }
 }
 
