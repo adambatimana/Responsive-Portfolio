@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="assets/css/sticky.js"></script>
+</head>
+
+<body id="contactPage">
+    <header>
+        <p><a href="index.html">Adam Batimana</a></p>
+    </header>
+    <nav id="header">
+        <ul>
+            <li><a href="index.html">About</a> &#124; </li>
+            <li><a href="portfolio.html">Portfolio</a>&#124; </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="backgroundspace" class="cf">
+            <main>
+                <section class="cf">
+                    <h1>Contact Me</h1>
+                    <hr />
+                    <div class="cform">
+                        <form class="contactform" name="contact" id="contact" method="post" action="formprocessor.php">
+                            <label for="Name">Name</label>
+                            <input type="text" name="Name" id="Name" placeholder="Full Name" class="required" required>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="email@address.com" class="required" required>
+                            <label for="Message">Message</label>
+                            <textarea name="Message" id="Message" cols="41" rows="6"></textarea>
+                            <br/>
+                            <input type="submit" name="submit" value="SUBMIT" />
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <aside>
+                <section class="aside">
+                    <h2>Connect with me</h2>
+                    <hr />
+                    <ul class="social">
+                        <li class="si">
+                            <a href="https://github.com/adambatimana"><img src="assets/images/gh.svg" alt="Github logo"></a>
+                        </li>
+                        <li class="si">
+                            <a href="https://www.linkedin.com/in/adambatimana/"><img src="assets/images/li2.svg" alt="LinkedIn logo"></a>
+                        </li>
+                        <li class="si">
+                            <a href="http://stackoverflow.com/users/7691686/adam-batimana"><img src="assets/images/of.svg" alt="stacked overflow"></a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+        <footer id="footer">
+            <p>&copy; Copyright 2017 Adam Batimana</p>
+        </footer>
+    </div>
+</body>
+
+</html>
